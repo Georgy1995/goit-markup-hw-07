@@ -67,7 +67,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1200px;
   }
 }
 .menu-header {
@@ -77,8 +77,8 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: var(--second-font-famyli);
@@ -611,7 +611,7 @@ bottom: -1px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
+  padding-bottom: 120px;
   color: var(--body-color);
 }
 
@@ -1130,7 +1130,6 @@ transform: translateY(0%);
     .header-container {
       display: flex;
       align-items: center;
-      /* gap: 121px; */
       padding-top: 0;
       padding-bottom: 0;
     }
@@ -1334,5 +1333,167 @@ transform: translateY(0%);
     padding-top: 120px;
     padding-bottom: 120px;
   }
- 
+  .fifth-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px) / 3);
+    justify-content: center;
+    align-items: center;
+    gap: 72px 16px;
+  }
+  .fifth-section-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+  }
+
+  /* FOOTER */
+
+  .page-footer{
+    padding-top: 96px;
+    padding-left: 108px;
+  }
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 72px 24px;
+    flex-direction: row;
+  }
+  .logo-text-footer{
+    margin: 0;
+    text-align: left;
+
+  }
+  .social-media-footer{
+    margin: 0;
+  }
+  .logo-footer{
+    justify-content: start;
+  }
+  .social-list-footer{
+    display: flex;
+    justify-content: start;
+    margin: 0;
+
+  }
+  .subscribe-form-footer{
+    width: 100%;
+  }
+ .social-media-text-footer{
+  margin-bottom: 16px;
+  text-align: left;
+
+ } 
+ .text-footer{
+  margin-left: 0;
+ }
+.footer-form{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  row-gap: 24px;
+  align-items: baseline;
+}
+.footer-form-field-wrapper{
+  display: block;
+  margin-right: 24px;
+  width: 264px;
+}
+.footer-form-input{
+  width: 264px;
+}
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1158px) {
+  .contact-list{
+  flex-direction: row;
+  gap: 40px;
+  }
+
+  /* FIRST SECTION */
+
+ .first-section{background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+  url('../images/people-office.jpg');
+  max-width: 1440px;
+}
+
+/* SECOND SECTION */
+
+.second-section-list{
+  flex-wrap: nowrap;
+}
+.our-principles-container {
+  display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.subtitle{
+  font-weight: 500;
+font-size: 20px;
+}
+.description{
+  font-weight: 400;
+}
+
+/* THIRD SECTION */
+
+.third-section {
+  display: block;
+}
+.third-section {
+  padding-bottom: 120px;
+}
+.third-section-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 24px) / 3);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+  color: var(--main-color);
+}
+
+/* FIFTH SECTION */
+
+.fifth-section-list{
+  flex-wrap: nowrap;
+  gap: 72px 24px;
+}
+
+
+/* FOOTER */
+
+.footer-container{
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.logo-text-footer{
+  margin-right: 120px;
+}
+.subscribe-form-footer{
+  margin-left: 80px;
+}
+.text-footer{
+  text-align: start;
+}
+.page-footer{
+  padding-left: 0;
+}
 }
